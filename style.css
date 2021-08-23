@@ -1,0 +1,281 @@
+*{
+
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+
+}
+
+body{
+
+    width: 100%;
+    height: 100vh;
+    background: #4e54c8;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Open Sans', sans-serif;
+    color: #393e93;
+ 
+    
+}
+
+/*----------------- Main Hugger -----------------*/
+
+#main-hugger {
+
+    width: 80%;
+    height: 600px;
+    box-shadow: 8px 8px 1px black;
+}
+
+/*-------------- Nav Bar ------------*/
+
+#navbar-container {
+
+    width: 80%;
+    height: 100px;
+    background-color: white;
+    margin-top: 50px;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 1px solid #4e54c82c;
+    box-shadow: 8px 8px 10px black;
+
+}
+
+#navbar-container h1 {
+
+
+    width: 500px;
+    text-align: left;
+    margin-left: 200px;
+    font-size: 40px;
+    letter-spacing: 1px;
+
+}
+
+#navbar-container ul {
+
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+
+
+}
+
+#navbar-container ul li {
+
+    font-size: 24px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    
+}
+
+#navbar-container ul li a {
+
+    color:#393e93;
+    text-decoration: none;
+}
+
+
+#navbar-container ul li a:hover {
+
+    color:#6d73f1;
+}
+
+/*----------------------- Location Container ---------------*/
+
+#location-container {
+
+    width: 80%;
+    height: 70px;
+    margin-left: 10%;
+    background-color: white;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid #4e54c82c;
+    box-shadow: 8px 8px 10px black;
+
+}
+
+.main-location {
+
+    height: 50px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin-left: 60px;
+}
+
+.main-location h1 {
+
+    cursor: pointer;
+}
+
+.main-location h1:hover {
+
+    color:#6d73f1;
+}
+
+.temp-option {
+
+    width: 500px;
+    height: 50px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 350px;
+   
+
+}
+
+.temp-option select {
+
+    height: 30px;
+    border: 2px solid #4e54c8;
+    border-radius: 10px;
+  
+}
+
+
+.temp-option p {
+
+    font-size: 20px;
+    width: 400px;
+    letter-spacing: 1px;
+
+}
+
+/*----------------------------- Weather Section Container ---------------- */
+
+#weathersection-container {
+
+    width: 80%;
+    height: 700px;
+    margin-left: 10%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 8px 8px 10px black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: scroll;
+
+}
+
+.days-weather {
+
+    width: 250px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+    margin-left: 50px;
+    border-radius: 15px;
+    border: 2px solid white;
+    box-shadow: 8px 8px 10px  #8f94fb;
+    cursor: pointer;
+}
+
+.days-weather h1{
+
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+.days-weather img {
+
+    width:200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+
+.days-weather h3 {
+
+    letter-spacing: 3px;
+    margin-top: 20px;
+}
+
+.temp-numbers {
+
+    width: 400px;
+    height: 150px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    letter-spacing: 1px;
+
+}
+
+/*------------------------- Cookie Pop Up -------------------*/
+
+#cookie-message{
+
+    position: fixed;
+    width: 90%;
+    height: 200px;
+    margin-left: 5%;
+    bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(233, 233, 233);
+    border: 1px solid #4e54c8;;
+    box-shadow: 4px 4px 1px  #8f94fb;
+    border-radius: 10px;
+
+}
+
+.cookie-innerbox1 {
+
+    display: flex;
+    flex-direction: column;;
+    
+}
+
+#cookie-message img {
+
+    width: 70px;
+    height: 70px;
+}
+
+#cookie-message button {
+
+    width: 200px;
+    height: 50px;
+    color: white;
+    box-shadow: 8px 8px 10px  #8f94fb;
+    border-radius: 13px;
+    background-color: #8f94fb;
+    border: 1px solid white;
+    cursor: pointer;
+
+}
+
+/*---------------------- Shadow Effect -------------------*/
+
+.shadow-effect {
+
+    position: relative;
+    box-shadow: 20px 20px 10px #8f94fb;
+    bottom: 5px;
+}
+
+

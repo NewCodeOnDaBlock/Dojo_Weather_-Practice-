@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <title>Dojo Weather</title>
+</head>
+<body>
+<div id="navbar-container">
+        <h1>Weather Now</h1>
+        <ul>
+            <li>
+                <a onclick="alert('Loading weather report')" href="/los_angeles.html">Los Angeles</a>
+            </li>
+            <li>
+                <a onclick="alert('Loading weather report')" href="/san_francisco.html" onclick="loadAlert(this)">San Francisco</a>
+            </li>
+            <li>
+                <a onclick="alert('Loading weather report')" href="/new_york.html">New York</a>
+            </li>
+            <li>
+                <a onclick="alert('Loading weather report')" href="/miami.html">Miami</a>
+            </li>
+        </ul>
+    </div>
+<div id="location-container">
+        <div class="main-location">
+            <h2>New York</h2>    
+            </div>
+        <div class="temp-option">
+            <p>Show Temperature In Faranheit</p>
+            <select onchange="selectTemperature()" class="symbol-select" name="temperature" id="temperature">
+                <option class="celcsius-option" value="celcsius">&#8451;</option>
+                <option class="farhenheight-option" value="farhenheight">&#8457;</option>
+            </select>
+        </div>    
+    </div>
+<div id="weathersection-container">
+    <div class="days-weather" onmouseover="shadowEffectOn(this)" onmouseout="shadowEffectOff(this)">
+        <h1>Sunday</h1>
+        <img src="/assets/some_sun.png" alt="">
+        <h3>Mostly Sunny</h3>
+        <div class="temp-numbers">
+            <h3 style="color: #6ccef8">Lowest</h3>
+                <h4 class="current-low1">80&deg;C</h4>
+            <h3 style="color: #FF6961">Highest</h3>
+                <h4 class="current-high1">97&deg;C</h4>
+        </div>
+    </div>
+    <div class="days-weather" onmouseover="shadowEffectOn(this)" onmouseout="shadowEffectOff(this)">
+        <h1>Monday</h1>
+        <img src="/assets/some_clouds.png" alt="">
+        <h3>Mostly Cloudy</h3>
+        <div class="temp-numbers">
+            <h3 style="color: #6ccef8">Lowest</h3>
+                <h4 class="current-low2">80&deg;C</h4>
+            <h3 style="color: #FF6961">Highest</h3>
+                <h4 class="current-high2">97&deg;C</h4>
+        </div>
+    </div>
+    <div class="days-weather" onmouseover="shadowEffectOn(this)" onmouseout="shadowEffectOff(this)">
+        <h1>Tuesday</h1>
+        <img src="/assets/some_clouds.png" alt="">
+        <h3>Cloudy</h3>
+        <div class="temp-numbers">
+            <h3 style="color: #6ccef8">Lowest</h3>
+                <h4 class="current-low3">80&deg;C</h4>
+            <h3 style="color: #FF6961">Highest</h3>
+                <h4 class="current-high3">97&deg;C</h4>
+        </div>
+    </div>
+    <div class="days-weather" onmouseover="shadowEffectOn(this)" onmouseout="shadowEffectOff(this)">
+        <h1>Wednesday</h1>
+        <img src="/assets/some_sun.png" alt="">
+        <h3>Sunny</h3>
+        <div class="temp-numbers">
+            <h3 style="color: #6ccef8">Lowest</h3>
+                <h4 class="current-low4">80&deg;C</h4>
+            <h3 style="color: #FF6961">Highest</h3>
+                <h4 class="current-high4">97&deg;C</h4>
+        </div>
+    </div>
+    <div class="days-weather" onmouseover="shadowEffectOn(this)" onmouseout="shadowEffectOff(this)">
+        <h1>Thursday</h1>
+        <img src="/assets/some_clouds.png" alt="">
+        <h3>Mostly Cloudy</h3>
+        <div class="temp-numbers">
+            <h3 style="color: #6ccef8">Lowest</h3>
+                <h4 class="current-low5">80&deg;C</h4>
+            <h3 style="color: #FF6961">Highest</h3>
+                <h4 class="current-high5">97&deg;C</h4>
+        </div>
+    </div>
+    <div class="days-weather" onmouseover="shadowEffectOn(this)" onmouseout="shadowEffectOff(this)">
+        <h1>Friday</h1>
+        <img src="/assets/some_rain.png" alt="">
+        <h3>Some Sprinkles</h3>
+        <div class="temp-numbers">
+            <h3 style="color: #6ccef8">Lowest</h3>
+                <h4 class="current-low6">80&deg;C</h4>
+            <h3 style="color: #FF6961">Highest</h3>
+                <h4 class="current-high6">97&deg;C</h4>
+        </div>
+    </div>
+    <div class="days-weather" onmouseover="shadowEffectOn(this)" onmouseout="shadowEffectOff(this)">
+        <h1>Saturday</h1>
+        <img src="/assets/some_sun.png" alt="">
+        <h3>Mostly Sunny</h3>
+        <div class="temp-numbers">
+            <h3 style="color: #6ccef8">Lowest</h3>
+                <h4 class="current-low7">80&deg;C</h4>
+            <h3 style="color: #FF6961">Highest</h3>
+                <h4 class="current-high7">97&deg;C</h4>
+        </div>
+    </div>
+</div>
+
+
+<script src="/script.js"></script>  
+</body>
+</html>
